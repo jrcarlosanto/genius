@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius</title>
+    <link rel="shortcut icon" type="imagex/png" href="/img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-game">
+        <div class="genius">
+            <div class="blue"></div>
+            <div class="yellow"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+            <div id="circulo">
+                <div class="score">
+                    <h1>Genius</h1>
+                    <hr>
+                    <h3>Pontuação: <span id="correntScore"></span></h3>
+                    <h3>Recorde: <span id="totalScore"></span></h3>
+                    <hr>
+                    <button class="button-start" onclick="playGame()">Iniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sons do jogo !-->
+    <audio src="sons/som.mp3" preload="auto" id="somDisparo"></audio>
+    <audio src="sons/score.mp3" preload="auto" id="somScore"></audio>
+    <audio src="sons/gameOver.wav" preload="auto" id="somGameOver"></audio>
+
+    <script src="/script.js"></script>
+</body>
+</html>
